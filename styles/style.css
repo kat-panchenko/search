@@ -57,12 +57,12 @@ main ul {
   border-radius: 50%;
 }
 
-input[type="image"] {
-/*  position: absolute;
-  content: "";*/
+button {
+  background: transparent;
+  border: none;
   display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 }
 
 input#search {
