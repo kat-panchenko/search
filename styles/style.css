@@ -1,15 +1,21 @@
 body {
   box-sizing: border-box;
-  max-width: 100%;
-  margin: 20px 0 0 50px;
-  padding: 30px;
+  margin: 0;
+  padding: 0;
   background-color: #f8f8f8;
   font-family: sans-serif, Arial;
   font-weight: bold;
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+div.center {
+  width: 80%;
+  margin: 0 auto;
 }
 
 header {
@@ -26,14 +32,24 @@ h3 {
   margin-bottom: auto;
 }
 
+form {
+  position: relative;
+}
 div.column {
   display: inline-block;
-  margin: 0 10px;
   width: 30%;
+  font-size: 20px;
+}
+.column:nth-child(2) {
+  margin: 0 5%;
 }
 
+main {
+  font-size: 0;
+}
 main ul {
-  width: 90%;
+
+  margin: 0;
   list-style-type: none;
   padding: 0;
 }
@@ -61,8 +77,9 @@ button {
   background: transparent;
   border: none;
   display: inline-block;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
+
 }
 
 input#search {
@@ -78,13 +95,10 @@ input#search {
   opacity: 0.4;
 }
 
-input#search:focus {
-  background-color: #b8b8b8;
-}
-
-input#search:active, :hover, :focus {
+input#search:active, input#search:hover, input#search:focus {
   outline: 0;
   border: none;
+  background-color: #b8b8b8;
 }
 
 li:hover {
